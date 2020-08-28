@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+}
+
+/*--------------------------------------------------HEADER--------------------------------------------------*/
+.header {
+    width: 100%;
+    height: 840px;
+    background-color: #ccdef0;
+    background-image: linear-gradient(#ccdef0, aliceblue);
+}
+
+/* Верхнее меню со списком гиперссылок */
+.container__top {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+}
+
+/* Главная страница с описанием товаара и картинкой */
+.container__btm {
+   display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Верхнее меню с лого и списком гиперссылок */
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Тропический Сад */
+.logo {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1;
+    color: #000;
+}
+
+.logo span {
+    color: #5abb33;
+}
+
+/* Список гиперссылок */
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Составляющие списка */
+.nav__item {
+    margin-right: 50px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.nav__link:hover {
+    color: #5abb33;
+}
+
+/* Загловок, кр.описание, кнопка и картинка */
+.header-content {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-desc {
+    width: 500px;
+    padding-top: 190px;
+}
+
+.header__title {
+    color: #000;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.3;
+    margin: 0 0 35px; /*верхний 0, левый и правый 0, нижний 35 */
+}
+
+.header__text {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+/* Кнопка "Получить заряд" */
+.header__btn {
+    display: inline-block;
+    height: 65px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 100px;
+    background-color: #fadb60;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 65px;
+}
+
+.header__btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #fadb60 ;
+}
+
+.header-photo {
+    padding-top: 50px;
+    width: 670px;
+}
+
+/*--------------------------------------------------MAIN--------------------------------------------------*/
+.main__first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    background-color: aliceblue;
+    background-image: linear-gradient(aliceblue, white);
+}
+
+.video {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Блок с таблицами */
+.main__second {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    background-image: linear-gradient(white, aliceblue);
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-flow: row;
+}
+
+/* Фоновый узор */
+.vit__background {
+    background-image: url(vitamins.png);
+    width: 100%;
+    background-size: 90px;
+    stroke-opacity: 0.2;
+    background-repeat: repeat;
+}
+
+/* Таблица с картинками */
+.table__toppings {
+    padding: 70px 60px;
+}
+
+.td__toppings {
+    border: none;
+}
+.td__toppings:hover {
+    color: #5abb33;
+}
+
+/* Оформление карртинок */
+.fruits {
+    width: 80px;
+    margin: 0 20px;
+    border-radius: 100px;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 65px;
+}
+
+/* Парйс-лист */
+.table__prices {
+    width: 800px;
+    padding: 85px 75px;
+    border-collapse: collapse;
+}
+
+th {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* Блок с акцией */
+.main__third {
+    padding: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-image: linear-gradient(aliceblue, #ccdef0);
+}
+
+/* Контерйнер с акционным предложением */
+.container__sale {
+    padding: 20px 110px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);;
+}
+
+.sale {
+    color: black;
+}
+
+.order__btn {
+    height: 65px;
+    padding: 1px 20px;
+    border-radius: 100px;
+    line-height: 30px;
+    background-color: #fadb60;
+}
+
+.order__btn__text {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    line-height: 65px;
+}
+
+.order__btn:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #fadb60 ;
+}
+
+/*--------------------------------------------------FOOTER--------------------------------------------------*/
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #232323;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    font-size: 20px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.footer__left {
+    display: flex;
+    justify-content: left;
+    padding-right: 475px;
+}
+
+.footer__right {
+    display: table;
+    justify-content: flex-end;
+    padding-left: 475px;
+}
+
+.footer a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #5abb33;
+}
